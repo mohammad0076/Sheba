@@ -1,0 +1,183 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "apply-leave-feature-test;verify-that-user-can-apply-leave-successfully",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify that user can apply leave successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 274858700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User navigates to the application",
+            "match": {
+              "location": "src\\test\\steps\\applyLeave.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7619108099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User enter the username as \"Admin\"",
+            "match": {
+              "location": "src\\test\\steps\\applyLeave.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5136214399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User enter the password as \"admin123\"",
+            "match": {
+              "location": "src\\test\\steps\\applyLeave.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8151687000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Click on the login button",
+            "match": {
+              "location": "src\\test\\steps\\applyLeave.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1702740200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User navigates to the \"Apply Leave\" page",
+            "match": {
+              "location": "src\\test\\steps\\applyLeave.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7647198599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User selects \"CAN - FMLA\" from the dropdown",
+            "match": {
+              "location": "src\\test\\steps\\applyLeave.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 195461000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Check that the leave balance is visible",
+            "match": {
+              "location": "src\\test\\steps\\applyLeave.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23483900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User Select \"From Date\" of leave",
+            "match": {
+              "location": "src\\test\\steps\\applyLeave.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6184013600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User fills in the leave comment as \"I would like to request a full-day leave for family. Thank you.\"",
+            "match": {
+              "location": "src\\test\\steps\\applyLeave.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38107300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "User apply for the leave",
+            "match": {
+              "location": "src\\test\\steps\\applyLeave.ts:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49038999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Cehck that leave applied successfully",
+            "match": {
+              "location": "src\\test\\steps\\applyLeave.ts:106"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11330300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 56078999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "apply-leave-feature-test",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Apply Leave Feature Test",
+    "tags": [],
+    "uri": "src\\test\\features\\applyLeave.feature"
+  }
+]

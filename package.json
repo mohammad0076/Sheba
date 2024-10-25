@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@cucumber/cucumber": "^9.4.0",
+    "@cucumber/cucumber": "^9.6.0",
     "@playwright/test": "^1.43.1",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.4.1",
@@ -30,5 +30,13 @@
     "multiple-cucumber-html-reporter": "^3.5.0",
     "prettier": "3.0.2",
     "ts-node": "^10.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamcegielka/playwright-cucumber-bdd-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adamcegielka/playwright-cucumber-bdd-typescript/issues"
+  },
+  "homepage": "https://github.com/adamcegielka/playwright-cucumber-bdd-typescript#readme"
 }
