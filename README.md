@@ -1,52 +1,63 @@
-[![Playwright.dev](https://img.shields.io/badge/Documentation-Playwright-45ba4b.svg?logo=playwright)](https://playwright.dev/docs/intro)
-[![Cucumber](https://img.shields.io/badge/Documantation-Cucumber-23d96c.svg?logo=cucumber)](https://cucumber.io/)
-[![GitHub](https://img.shields.io/badge/Documantation-GitHub-23d96c.svg?logo=github)](https://github.com/adamcegielka/playwright-cucumber-bdd-typescript)
-<br>
+# Cucumber Test Automation
 
-# Playwright with Typescript - Cucumber - BDD
+This project demonstrates how to set up and run automated tests using Cucumber with Playwright.
 
-This is my personal project to improve my skills in automated testing using Cucumber and BDD.
-This project was created solely for my learning process and to showcase my testing skills.
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running Tests](#running-tests)
+- [Viewing Reports](#viewing-reports)
+- [Conclusion](#conclusion)
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (v12 or higher recommended)
 
 ## Installation
 
-- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> => Install Playwright => OK
-- Install Cucumber plugin
-- Install dependencies: 
-  - `npm i @cucumber/cucumber -D`
-  - `npm i ts-node -D`
-- Create folder `src/test/features` and `src/test/steps`
-- Install ESLint `npm install eslint --save-dev`
-- Configuration `npm init @eslint/config`
-- Add prettier in `.eslintrc.json` :
-```json
-"extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-],
-```
-- Install Prettier `npm install --save-dev --save-exact prettier`
-- Add file `.prettierignore` :
-```
-package-lock.json
-README.md
-```
-- Add Prettier rule `.prettierrc.json` :
-```json
-{
-    "singleQuote": true
-}
-```
-- Run formatting with Prettier `npx prettier --write .`
-- Linking Prettier with ESLint `npm install --save-dev eslint-config-prettier`
+Follow these steps to set up your project:
 
-## Tutorials
+1. **Initialize npm**:
+   - Open your terminal and navigate to your project directory.
+   - Run the following command to create a `package.json` file:
+     ```bash
+     npm init -y
+     ```
 
-- [Playwright Cucumber (BDD) - Typescript](https://www.udemy.com/course/playwright-cucumber-bdd-typescript)
-- [Automated Software Testing with Playwright](https://www.udemy.com/course/automated-software-testing-with-playwright)
-- [Playwright & Cucumber - Typescript](https://www.youtube.com/watch?v=bfWXNLqKlvA&list=PL699Xf-_ilW6KgK-S1l9ynOnBGiZl2Bsk)
-- [Cucumber and Playwright](https://www.youtube.com/watch?v=PUVFmhYJNJA&t=1314s)
-- [Cucumber JS - YT](https://www.youtube.com/watch?v=vT4WHsZh6AU&list=PLBw1ubD1J1UhScgbM67OAfZqrVQJNzg0b)
-- [Cucumber JS - GitHub](https://github.com/cucumber/cucumber-js)
-- [Selenium JavaScript Tutorial](https://www.youtube.com/watch?v=BQ-9e13kJ58)
+2. **Install Cucumber**:
+   - Run the following command to install the necessary Cucumber package:
+     ```bash
+     npm install @cucumber/cucumber
+     ```
+
+## Running Tests
+
+To run your Cucumber tests, follow these steps:
+
+1. **Run a specific feature test**:
+   - Use the following command to run a specific feature:
+     ```bash
+     npx cucumber-js src/test/feature/wptest.feature
+     ```
+
+2. **Run all tests**:
+   - You can also run all tests specified in your `package.json` under the "test" script:
+     ```bash
+     npm test
+     ```
+
+## Viewing Reports
+
+After running your tests, you can view the generated report. Follow the instructions based on your operating system:
+
+### For Windows:
+
+- Use the following command to open the report:
+\
+  start "test-results\cucumber-report.html"
+
+
+
+  
